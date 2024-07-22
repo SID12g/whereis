@@ -13,6 +13,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/location" element={<Location />} />
         <Route path="/statics" element={<Statics />} />
+        <Route path="/*" element={<Main />} />
       </Routes>
     </BrowserRouter>
   );
