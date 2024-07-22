@@ -20,14 +20,14 @@ export default function Location() {
         현재 위치 : 교실
       </p>
       <select
-        defaultValue="위치 선택"
+        defaultValue="checked"
         css={css`
           margin-bottom: 20px;
         `}
         className="form-select"
         aria-label="Default select example"
       >
-        <option value="위치 선택" disabled hidden>
+        <option value="checked" disabled hidden>
           위치 선택
         </option>
         {locations.map((location, index) => (

@@ -20,7 +20,7 @@ export default function Login() {
         <input
           type="text"
           className="form-control"
-          id="floatingInput"
+          id="floatingUsernameInput"
           placeholder="Username"
         />
         <label htmlFor="floatingInput">Username</label>
@@ -29,7 +29,7 @@ export default function Login() {
         <input
           type="password"
           className="form-control"
-          id="floatingInput"
+          id="floatingPasswordInput"
           placeholder="Password"
         />
         <label htmlFor="floatingInput">Password</label>
