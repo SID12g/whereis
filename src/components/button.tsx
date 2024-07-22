@@ -1,0 +1,18 @@
+import React from "react";
+import { css } from "@emotion/react";
+
+/** @jsxImportSource @emotion/react */
+
+export default function Button({ children }: { children: React.ReactNode }) {
+  return (
+    <button
+      css={css`
+        width: 100%;
+      `}
+      type="button"
+      className="btn btn-primary"
+    >
+      {children}
+    </button>
+  );
+}
