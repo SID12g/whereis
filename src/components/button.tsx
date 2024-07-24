@@ -9,7 +9,7 @@ export default function Button({ children }: { children: React.ReactNode }) {
       css={css`
         width: 100%;
       `}
-      type="button"
+      type="submit"
       className="btn btn-primary"
     >
       {children}
