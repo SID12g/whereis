@@ -15,7 +15,6 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/location" element={<Location />} />
         <Route path="/statics" element={<Statics />} />
-        <Route path="/*" element={<Main />} />
       </Routes>
     </BrowserRouter>
   );
