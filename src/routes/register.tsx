@@ -50,7 +50,7 @@ export default function Register() {
         </option>
         {grade.map((grade, index) => (
           <option key={index} value={grade}>
-            {grade} 학년
+            {grade}학년
           </option>
         ))}
       </select>
@@ -67,7 +67,7 @@ export default function Register() {
         </option>
         {classroom.map((classroom, index) => (
           <option key={index} value={classroom}>
-            {classroom} 반
+            {classroom}반
           </option>
         ))}
       </select>
@@ -85,7 +85,7 @@ export default function Register() {
         </option>
         {number.map((number, index) => (
           <option key={index} value={number}>
-            {number} 번
+            {number}번
           </option>
         ))}
       </select>
