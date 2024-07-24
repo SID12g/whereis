@@ -4,6 +4,7 @@ import Main from "./routes/main";
 import Login from "./routes/login";
 import Location from "./routes/location";
 import Statics from "./routes/statics";
+import Register from "./routes/register";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/location" element={<Location />} />
         <Route path="/statics" element={<Statics />} />
         <Route path="/*" element={<Main />} />

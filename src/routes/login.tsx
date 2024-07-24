@@ -35,6 +35,23 @@ export default function Login() {
         <label htmlFor="floatingInput">Password</label>
       </div>
       <Button>Login</Button>
+      <div
+        css={css`
+          height: 12px;
+        `}
+      />
+      <a
+        href="/register"
+        css={css`
+          font-size: 14px;
+          font-weight: 400;
+          color: #606060;
+          text-decoration: none;
+          text-align: center;
+        `}
+      >
+        <p>Register</p>
+      </a>
     </Wrap>
   );
 }
