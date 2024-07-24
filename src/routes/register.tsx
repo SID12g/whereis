@@ -40,7 +40,11 @@ export default function Register() {
           aria-describedby="basic-addon1"
         />
       </div>
-      <select className="form-select" aria-label="Default select example">
+      <select
+        className="form-select"
+        aria-label="Default select example"
+        defaultValue="checked"
+      >
         <option value="checked" disabled hidden>
           학년
         </option>
@@ -54,6 +58,7 @@ export default function Register() {
         css={css`
           margin-top: 20px;
         `}
+        defaultValue="checked"
         className="form-select"
         aria-label="Default select example"
       >
@@ -71,6 +76,7 @@ export default function Register() {
           margin-top: 20px;
           margin-bottom: 20px;
         `}
+        defaultValue="checked"
         className="form-select"
         aria-label="Default select example"
       >
