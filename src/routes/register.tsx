@@ -35,11 +35,12 @@ export default function Register() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
     try {
       const response = await axios.post("/api/auth/register", formData);
       if (response.status === 200) {
         navigate("/login");
-        // console.log(response);
+        console.log(response);
       } else {
         console.log("error111");
       }
@@ -139,9 +140,9 @@ export default function Register() {
             </option>
           ))}
         </select>
-        <button type="submit">회원가입</button>
+
+        <Button>회원가입</Button>
       </form>
-      <Button>회원가입</Button>
     </Wrap>
   );
 }
