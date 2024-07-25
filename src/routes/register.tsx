@@ -4,6 +4,7 @@ import Button from "../components/button";
 import axios from "axios";
 import React, { ChangeEvent, useState } from "react";
 import { useNavigate } from "react-router";
+import { alert } from "../components/alert";
 
 /** @jsxImportSource @emotion/react */
 
@@ -41,11 +42,14 @@ export default function Register() {
       if (response.status === 200) {
         navigate("/login");
         console.log(response);
+        alert.success("회원가입이 완료되었습니다.");
       } else {
         console.log("error111");
+        alert.error("회원가입을 실패했습니다.");
       }
     } catch (error) {
       console.error("error:", error);
+      alert.error("회원가입을 실패했습니다.");
     }
   };
 
